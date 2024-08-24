@@ -33,8 +33,18 @@ public class Exercicio24 {
         }
 
         float mediaAltura = alturaTodos / N;
-
         System.out.printf("%.2f%n", mediaAltura);
+
+        int cont = 0;
+        for (int i =0; i<N; i++) {
+            if (idade[i] <16) {
+                    cont = cont + 1;
+            }
+        }
+
+        float x = cont * 100 / N;
+
+        System.out.printf("Pessoas com menos de 16 anos:%.1f%%%n ", x);
 
         sc.close();
     }
